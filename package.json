@@ -1,0 +1,50 @@
+{
+  "name": "dsh-cjbf",
+  "version": "1.0.0",
+  "description": "Back up every installed DSH plugin into one folder and restore it on a new machine — profile config included. · 把本机已装 DSH 插件（含配置）备份到一个文件夹，换电脑后一键恢复。",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "backup",
+    "restore",
+    "migration"
+  ],
+  "author": "CheapGodMs",
+  "homepage": "https://github.com/CheapGodMs/dsh-cjbf#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CheapGodMs/dsh-cjbf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CheapGodMs/dsh-cjbf/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.5"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-plugin-manager"]
+    }
+  }
+}

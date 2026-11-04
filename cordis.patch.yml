@@ -1,0 +1,4 @@
+- insert:
+    - id: plugin-backup
+      name: 'dsh-cjbf'
+      config: {}

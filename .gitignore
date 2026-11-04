@@ -1,0 +1,8 @@
+node_modules/
+*.tgz
+backups/
+DSH插件备份-*/
+.plugin-backup-restore-*/
+.DS_OSC
+Thumbs.db
+.DS_Store

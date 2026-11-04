@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Plugin Backup",
+    "description": "Back up every installed plugin into a folder and restore it on a new machine."
+  }
+}
